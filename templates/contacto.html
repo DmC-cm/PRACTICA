@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+   
+        <header>
+            <img src="{{ url_for('static', filename='images/LOGO.jpg') }}" alt="" height="100" width="100">
+            <h1>CONTACTENOS</h1>
+        </header>
+        <nav class="navbar">
+            <ul>
+            <li><a href="/somos">Quienes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/index">Inicio</a></li>
+        </ul>
+        </nav>
+        <br>
+        <p>
+            Nuestro equipo esta disponible para atender cualquier duda o requerimientos que desea solicitar
+             y servicio que desee solicitar
+        </p>
+        <div class="container">
+            <div class="card">
+                <figure>
+                    <!--<img src="images/testimonio.jpg" alt=""> -->
+                </figure>
+                <div class="contenido">
+                    <h3>Contactenos</h3>
+                    <P>Envieno su peticion nostros responderemos sus dudas</P>
+                    <form action="/contacto" method="post">
+                        <label for="" name="usuario">Nombre</label>
+                        <input type="text" name="usuario">
+                        <br>
+                        <label for="" name="email">Email</label>
+                        <input type="email" name="email">
+                        <br>
+                        <label for="" name="descrip">Descripcion</label>
+                        <input type="text" name="descrip" >
+                        <br>
+                        <input type="submit" value="SOLICITAR">
+                    </form>
+                </div>
+
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="{{ url_for('static', filename='images/contacto.jpg') }}">
+                    </figure>
+                    <div class="contenido">
+                        <h3>Nuestra Informacion</h3>
+                        <p>
+                            Telefono: 567+ 984-874-284
+                            <br>
+                            Correo: ggGames@gmail.com
+                            <br>
+                            Cede:La Paz-Bolivia/AV.Salazar portuario 
+                        </p>
+                        
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contenido"><h3>Nuestra Ubicacion</h3></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8642.083989255103!2d-68.19209284968107!3d-16.49198993900832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915ede3378ea9d6d%3A0x26cac4a2caefcb29!2sUniversidad%20P%C3%BAblica%20de%20El%20Alto!5e0!3m2!1ses!2sbo!4v1728779630945!5m2!1ses!2sbo"
+                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                </div>
+    
+                <footer>
+                    <p> ggsGames@gmail.com  --  Todos los derechos reservados@2024</p>
+                    <div class="wrapper">
+                        <ul>
+                        <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                         <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+                     </div> 
+                 </footer>
+</body>
+</html>

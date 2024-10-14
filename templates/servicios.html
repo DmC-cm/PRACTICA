@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>servicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/LOGO.jpg') }}"  alt="" height="100" width="100">
+        <h1>SERVICIOS </h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+        <li><a href="/somos">Quienes Somos?</a></li>
+        <li><a href="/noticias">Noticias</a></li>
+        <li><a href="/contacto">Contactenos</a></li>
+        <li><a href="/index">Inicio</a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/serv1.jpg') }}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>Desarollo de videojuegos</h3>
+                <p>
+                    Nuestro equipo tambien se especializa en el desarollo de videojuegos y la restrucyuracion 
+                    de los mismos dando una consultoria acerca de el desarollo y optimisaciones 
+                    para los titulos que lanzan la diferntes empresas
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/serv2.jpg') }}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>Testing de titulos</h3>
+                <p>
+                    Nuestro equipo cuenta con profecionales de programacion y conocimiento en desarollo y diseño 
+                    que prueban los titulos antes de que salgan a el publico pra optimisarlos y mejorar su rendimiento y que 
+                    obtenga un recibiminto exitoso entre la gente
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/serv3.png') }}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>Distribucion de Titulos</h3>
+                <p>
+                    Contamos con sucursales y tiendas en casi todos los paises de latinoamerica por ello 
+                    uno de nuestro beneficios es poder distribuir los titulos de nuestros colaboradores 
+                    y ofrecer promociones y beneficios tanto como a los clientes y a los colaboradores
+                </p>
+               
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p> ggsGames@gmail.com  --  Todos los derechos reservados@2024</p>
+            <div class="wrapper">
+                <ul>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                 <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+                <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+             </div> 
+         </footer>
+</body>
+</html>

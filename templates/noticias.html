@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <h1>NOTICIAS RECIENTES</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+        <li><a href="/somos">Quienes Somos</a></li>
+        <li><a href="/servicios">Servicios</a></li>
+        <li><a href="/contacto">Contactenos</a></li>
+        <li><a href="/index">Inicio</a></li>
+    </ul>
+</nav>
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/noti1.png') }}" alt="">
+            </figure>
+            <div class="contenido">
+                <h3>Mark Zuckerberg ha jugado más de 1000 horas este juego en Steam; el dueño de Meta y Facebook
+                     cree que nadie puede vencerlo en una partida</h3>
+                <p>Mark Zuckerberg, dueño de Meta y Facebook, es un hombre muy ocupado, pero siempre encuentra un poco 
+                    de tiempo libre para disfrutar los videojuegos. En una entrevista reciente, el empresario reveló uno de sus géneros
+                     favoritos y admitió que ha jugado más de 1000 horas un popular título.
+                </p>
+                <a href="https://www.levelup.com/noticias/807023/Mark-Zuckerberg-ha-jugado-mas-de-1000-horas-este-juego-en-Steam-el-dueno-de-Meta-y-Facebook-cree-que-nadie-puede-vencerlo-en-una-partida">Leer Mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/noti2.png') }}" >
+            </figure>
+            <div class="contenido">
+                <h3>
+                    Dragon Ball: Sparking! ZERO triunfa a lo grande en Steam con miles de jugadores
+                     y ya es el título de lucha más jugado de la historia en PC</h3>
+                <p>
+                    Dragon Ball: Budokai Tenkaichi 3 y sus precuelas definieron toda una generación, 
+                    así que había muchas expectativas por Dragon Ball: Sparking! ZERO. Por suerte, la espera de 
+                    casi 20 años valió la pena y estamos frente a uno de los títulos más completos y divertidos de la franquicia. Su buena recepción se reflejó en su enorme popularidad en PC
+                </p>
+                <a href="https://www.levelup.com/noticias/806341/Dragon-Ball-Sparking-ZERO-triunfa-a-lo-grande-en-Steam-con-miles-de-jugadores-y-ya-es-el-titulo-de-lucha-mas-jugado-de-la-historia-en-PC">Leer Mas</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/noti3.png') }}" >
+            </figure>
+            <div class="contenido">
+                <h3>Juegos clásicos de God of War podrían regresar con nuevas remasterizaciones, según rumor</h3>
+                <p>
+                    God of War se convirtió en un pilar de la marca PlayStation desde su nacimiento en la generación del PS2.
+                     Sus más recientes entregas se alejan de la fórmula y el tono de los títulos originales, así que hay quienes
+                      consideran que la saga griega es más icónica y memorable. Con esto en mente, es probable que el siguiente rumor sea emocionante para un gran sector de la comunidad.
+                </p>
+                <a href="God of War se convirtió en un pilar de la marca PlayStation desde su nacimiento en la generación del PS2. Sus más recientes entregas se alejan de la fórmula y el tono de los títulos originales, así que hay quienes consideran que la saga griega es más icónica y memorable. Con esto en mente, es probable que el siguiente rumor sea emocionante para un gran sector de la comunidad.">Leer Mas</a>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <p> ggsGames@gmail.com  --  Todos los derechos reservados@2024</p>
+            <div class="wrapper">
+                <ul>
+                <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+                 <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+                <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                </ul>
+             </div> 
+         </footer>
+</body>
+</html>

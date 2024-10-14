@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG-TEC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        body, html {
+            height: 100%; 
+            margin: 0; 
+            
+        }
+        .containeri {
+            display: flex; 
+            justify-content: center;
+            align-items: center; 
+            height: calc(100% - 200px); 
+            flex-direction: column; 
+        }
+        .cardi {
+            width: 80%;
+            background-color: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/LOGO.jpg') }}" alt="Logo de GG-TEC" height="100" width="100">
+        <h1>GG-TEC</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/somos">Quienes Somos</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/noticias">Noticias</a></li>
+            <li><a href="/contacto">Contáctenos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h3>Ready Player?</h3>
+        <p>Nosotros somos una empresa dedicada a la distribución y test de diferentes plataformas 
+            de videojuegos y sus títulos correspondientes, testando los títulos y asegurando su jugabilidad
+            y pronosticando su recibimiento ante el público.
+            <br>
+            Nustra capacidad para mantener titulos a flote es de confiar y nos respaldamos en las
+            ultimas tecnologias disponibles para lograr nuestro objetivos y satisfacer u nuestri clientes
+        </p>
+        <br>
+        <div class="containeri">
+            <div class="cardi">
+                <figure>
+                    <img src="{{ url_for('static', filename='images/ia-vid3.jpg') }}" alt="" width="830 " height="300">
+                </figure>
+                <div class="contenido">
+                    <h3>EL FUTURO DEL DESAROLLO</h3>
+                    <p>
+                        En **GG TEC**, nos especializamos en ofrecer soluciones tecnológicas innovadoras que
+                         impulsan la eficiencia y el crecimiento de tu negocio. Desde el desarrollo de software a
+                        medida hasta la implementación de sistemas de gestión empresarial, nuestro equipo de expertos
+                         está dedicado a transformar tus desafíos en oportunidades. Con un enfoque centrado en el cliente 
+                         y un compromiso con la calidad, te ayudamos a optimizar procesos, aumentar la productividad y lograr 
+                         tus objetivos estratégicos. ¡Descubre cómo podemos llevar tu empresa al siguiente nivel!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yBSkkfI0Cq4" 
+        frameborder="0" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xueHf8NXK7Q" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <p>Trabajamos con diferentes socios como:</p>
+        
+        <div class="wrapper">
+            <ul>
+            <li class="facebook"><a href="#"><i class="fa fa-xing-square fa-2x" aria-hidden="true"></i></a></li>
+            <li class="twitter"><a href="#"><i class="fa fa-play-circle fa-2x" aria-hidden="true"></i></a></li>
+             <li class="instagram"><a href="#"><i class="fa fa-gamepad fa-2x" aria-hidden="true"></i></a></li>
+            <li class="google"><a href="#"><i class="fa fa-steam fa-2x" aria-hidden="true"></i> </a></li>
+            <li class="whatsapp"><a href="#"><i class="fa fa-rebel fa-2x" aria-hidden="true"></i></a></li>
+            <li class="general"><a href="#"><i class="fa fa-reddit-alien fa-2x" aria-hidden="true"></i></a></li>
+            <li class="facebook"><a href="#"><i class="fa fa-slack fa-2x" aria-hidden="true"></i></a></li>
+            <li class="twitter"><a href="#"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a></li>
+            <li class="instagram"><a href="#"><i class="fa fa-spotify fa-2x" aria-hidden="true"></i></a></li>
+            <li class="google"><a href="#"><i class="fa fa-gitlab  fa-2x" aria-hidden="true"></i></a></li>
+            <li class="whatsapp"><a href="#"><i class="fa fa-amazon fa-2x" aria-hidden="true"></i></a></li>
+            <li class="general"><a href="#"><i class="fa fa-twitch fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+         </div> 
+        <br>
+        
+            
+         
+
+        <br>
+        
+    </main>
+    
+    <div class="container">
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/testimonio.jpg') }}" alt="Testimonio">
+            </figure>
+            <div class="contenido">
+                <h3>Testimonios</h3>
+                <p>Nuestros clientes aseguran que somos una empresa eficiente y capaz que 
+                    ha solventado y corregido diferentes títulos, haciendo que estos sean un éxito
+                    en el mercado.
+                </p>
+                <a href="/somos">Leer Más</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/ventajas.jpg') }}" alt="Ventajas">
+            </figure>
+            <div class="contenido">
+                <h3>Servicio</h3>
+                <p>
+                    Nuestros servicios van desde la distribución y test de los títulos,
+                    asegurando su jugabilidad y arreglando imperfecciones. Además, organizamos
+                    competiciones de los títulos y aseguramos los mismos para su éxito.
+                </p>
+                <a href="/servicios">Leer Más</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="{{ url_for('static', filename='images/Somos.jpg') }}" alt="Sobre Nosotros">
+            </figure>
+            <div class="contenido">
+                <h3>Conocimiento</h3>
+                <p>
+                    Nuestra empresa se mantiene al tanto de los cambios en el mundo de la tecnología
+                    y la popularidad de las nuevas tendencias y desarrollo a futuro.
+                    Nuestras predicciones producen el éxito de los títulos.
+                </p>
+                <a href="/noticias">Leer Más</a>
+            </div>
+        </div>
+    </div>
+   
+    <footer>
+        <p>ggsGames@gmail.com -- Todos los derechos reservados @2024</p>
+        <div class="wrapper">
+            <ul>
+            <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+            <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+             <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+            <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+            <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+            </ul>
+         </div> 
+    </footer>
+</body>
+</html>

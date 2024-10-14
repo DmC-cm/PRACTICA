@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quienes Somos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/estilo.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" 
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='images/LOGO.jpg') }}" alt="" height="100" width="100">
+        <h1>NOSOTROS SOMOS</h1>
+    </header>
+    <nav class="navbar">
+        <ul>
+        <li><a href="/servicios">Servicios</a></li>
+        <li><a href="/noticias">Noticias</a></li>
+        <li><a href="/contacto">Contactenos</a></li>
+        <li><a href="/index">Inicio</a></li>
+    </ul>
+</nav>
+    <br>
+    <h2>Nuestra Respuesa</h2>
+    <br>
+    <div class="contenido">
+        <h2>La ambision</h2>
+    <br><p>En el año 2015, un grupo de amigos apasionados por los videojuegos se reunió en una pequeña sala de estar 
+        en una ciudad vibrante. Cada uno de ellos compartía no solo el amor por los videojuegos, sino también la frustración 
+        por la calidad de algunos títulos que llegaban al mercado. Mientras disfrutaban de una tarde de juego, comenzaron a
+         discutir cómo podrían mejorar la experiencia de los jugadores y ayudar a los desarrolladores a crear títulos de 
+         mayor calidad.</p>
+    <br>
+    <h2>Primeros pasos</h2>
+    <br>
+    <p>
+        Los inicios no fueron fáciles. Sin financiación y con recursos limitados, el equipo se dedicó a realizar
+         pruebas de juegos de forma voluntaria, ofreciendo sus servicios a desarrolladores independientes. A cambio, recibieron 
+         experiencia y la oportunidad de construir relaciones valiosas en la industria. A medida que su reputación crecía, también 
+            lo hacía su cartera de clientes. 
+    </p>
+    <br>
+    <h2>Desarollo</h2>
+    <br>
+    <p>
+        Con el tiempo, GG-TEC comenzó a recibir solicitudes de empresas más grandes, ansiosas por beneficiarse de su enfoque meticuloso
+         y su pasión por la calidad. El equipo se expandió, incorporando a expertos en diferentes áreas, desde testers hasta
+          especialistas en marketing y análisis de mercado. Juntos, desarrollaron metodologías innovadoras que optimizaban el proceso de testing y distribución
+    </p>
+    
+</div>
+
+<br>
+    <br>
+<div class="container">
+    <div class="card">
+        <figure>
+            <img src="{{ url_for('static', filename='images/ia-vid1.jpg') }}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>MISION</h3>
+            <p>
+                En GG-TEC, nuestra misión es ser líderes en la industria del entretenimiento digital, proporcionando soluciones integrales
+                 de distribución y testing para videojuegos de alta calidad. Nos comprometemos a
+                 asegurar que cada título que manejamos no solo cumpla con los estándares más exigentes de jugabilidad y rendimiento, sino que también ofrezca experiencias inolvidables a los jugadores.
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="{{ url_for('static', filename='images/ia-vid2.jpg') }}">
+        </figure>
+        <div class="contenido">
+            <h3>VISION</h3>
+            <p>
+                En GG-TEC, nuestra visión es ser la referencia global en la distribución y testing de videojuegos, reconocida
+                 por nuestra capacidad para impulsar la calidad y la innovación en la industria del entretenimiento digital. 
+                 Aspiramos a transformar la forma en que los videojuegos son desarrollados, distribuidos y experimentados,
+                  creando un impacto positivo en el mercado y en la comunidad de jugadores.
+
+            </p>
+        
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="{{ url_for('static', filename='images/Equipo de trabajo.jpg') }}" alt="">
+        </figure>
+        <div class="contenido">
+            <h3>NUESTRO EQUIPO</h3>
+            <p>
+                En GG-TEC, nuestro equipo de trabajo está compuesto por profesionales apasionados y altamente capacitados 
+                que desempeñan un papel fundamental en la distribución y testing de videojuegos. 
+                Nuestras principales funciones incluyen:
+                Distribucion de videojuegos,Testing ,Analisis de mercado,Colaboracion con desarolladoras,
+                Gestion de competencias.
+            </p>
+        </div>
+    </div>
+    </div> 
+<footer>
+   <p> ggsGames@gmail.com  --  Todos los derechos reservados@2024</p>
+   <div class="wrapper">
+    <ul>
+    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+     <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+    <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+    </ul>
+ </div> 
+</footer>
+</body>
+</html>
